@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import "./App.css";
+import { Button } from "@/components/ui/button";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -12,10 +13,8 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900">
-      <h1 className="text-4xl font-bold text-emerald-400">
-        Hello Tailwind v4 + Tauri
-      </h1>
+    <div className="">
+      <Button>Hello world</Button>
     </div>
   );
 }
